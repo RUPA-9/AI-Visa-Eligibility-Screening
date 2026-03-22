@@ -1,0 +1,245 @@
+[
+  {
+    "test_id": "F1-001",
+    "test_name": "Missing All F1-Specific Fields",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Insufficient Data",
+    "actual_confidence": 20,
+    "actual_missing": [
+      "f1.i20_issued",
+      "f1.acceptance_letter",
+      "f1.financial_resources"
+    ]
+  },
+  {
+    "test_id": "F1-002",
+    "test_name": "Partial F1 Fields (Only Acceptance)",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Insufficient Data",
+    "actual_confidence": 25,
+    "actual_missing": [
+      "f1.i20_issued",
+      "f1.proof_of_funds_amount"
+    ]
+  },
+  {
+    "test_id": "F1-003",
+    "test_name": "Complete F1 - Eligible Profile",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 80,
+    "actual_missing": []
+  },
+  {
+    "test_id": "F1-004",
+    "test_name": "Complete F1 - No I-20 (Ineligible)",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Ineligible",
+    "actual_confidence": 30,
+    "actual_missing": []
+  },
+  {
+    "test_id": "F1-005",
+    "test_name": "F1 - Ambiguous Responses (Unknown Values)",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Insufficient Data",
+    "actual_confidence": 25,
+    "actual_missing": [
+      "f1.university_acceptance",
+      "f1.i20_issued"
+    ]
+  },
+  {
+    "test_id": "F1-006",
+    "test_name": "F1 - Data Validation (Formats)",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 80,
+    "actual_missing": []
+  },
+  {
+    "test_id": "H1B-001",
+    "test_name": "Missing Job Offer and Employer",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Insufficient Data",
+    "actual_confidence": 20,
+    "actual_missing": [
+      "h1.job_offer",
+      "h1.employer_details",
+      "h1.specialty_occupation",
+      "h1.educational_requirements",
+      "h1.wage_requirements",
+      "h1.labor_condition_application"
+    ]
+  },
+  {
+    "test_id": "H1B-002",
+    "test_name": "Partial H1B (Job but No Experience)",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 75,
+    "actual_missing": []
+  },
+  {
+    "test_id": "H1B-003",
+    "test_name": "Complete H1B - Strong Profile",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 75,
+    "actual_missing": []
+  },
+  {
+    "test_id": "H1B-004",
+    "test_name": "Complete H1B - No Job Offer",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Ineligible",
+    "actual_confidence": 25,
+    "actual_missing": []
+  },
+  {
+    "test_id": "H1B-005",
+    "test_name": "H1B - Minimum Experience",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 75,
+    "actual_missing": []
+  },
+  {
+    "test_id": "H1B-006",
+    "test_name": "H1B - No Degree Equivalency",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Ineligible",
+    "actual_confidence": 20,
+    "actual_missing": []
+  },
+  {
+    "test_id": "B1B2-001",
+    "test_name": "Missing Return Ticket",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Insufficient Data",
+    "actual_confidence": 20,
+    "actual_missing": [
+      "b1b2.purpose_of_visit",
+      "b1b2.financial_stability",
+      "b1b2.ties_to_home_country"
+    ]
+  },
+  {
+    "test_id": "B1B2-002",
+    "test_name": "Partial B1B2 (No Invitation)",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 65,
+    "actual_missing": []
+  },
+  {
+    "test_id": "B1B2-003",
+    "test_name": "Complete B1B2 - Business Trip",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 75,
+    "actual_missing": []
+  },
+  {
+    "test_id": "B1B2-004",
+    "test_name": "Complete B1B2 - Tourist Trip",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 65,
+    "actual_missing": []
+  },
+  {
+    "test_id": "B1B2-005",
+    "test_name": "B1B2 - Long Duration (90 days)",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 65,
+    "actual_missing": []
+  },
+  {
+    "test_id": "B1B2-006",
+    "test_name": "B1B2 - Medical Travel",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 65,
+    "actual_missing": []
+  },
+  {
+    "test_id": "K1-001",
+    "test_name": "Missing US Citizen Sponsor",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Insufficient Data",
+    "actual_confidence": 5,
+    "actual_missing": [
+      "k1.petitioner_us_citizen",
+      "k1.met_in_person",
+      "k1.intent_to_marry",
+      "k1.petitioner_income",
+      "k1.criminal_history"
+    ]
+  },
+  {
+    "test_id": "K1-002",
+    "test_name": "Sponsor but Never Met",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Ineligible",
+    "actual_confidence": 25,
+    "actual_missing": []
+  },
+  {
+    "test_id": "K1-003",
+    "test_name": "Complete K1 - Eligible Profile",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 70,
+    "actual_missing": []
+  },
+  {
+    "test_id": "K1-004",
+    "test_name": "K1 - Recent Meeting (2 months)",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 70,
+    "actual_missing": []
+  },
+  {
+    "test_id": "K1-005",
+    "test_name": "K1 - Long Relationship (24 months)",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 85,
+    "actual_missing": []
+  },
+  {
+    "test_id": "K1-006",
+    "test_name": "K1 - Financial Verification",
+    "status": "PASS",
+    "message": "All validations passed",
+    "actual_decision": "Likely Eligible",
+    "actual_confidence": 80,
+    "actual_missing": []
+  }
+]
